@@ -187,7 +187,41 @@ main{
 
 .interactive-bar{
     width: 50%;
-    text-align: center;
+    flex-direction: column;
+}
+
+.audio-icon-container{
+color: white;
+font-size: 15px;
+position: relative;
+top: -10px;
+display: flex;
+align-items: center;
+justify-content: center
+}
+
+.audio-icon-container>i{
+    margin: 0 15px 0 15px ;
+}
+
+.audio-icon-container>.fa-circle-play{
+    font-size: 30px;
+}
+
+.time-zone{
+display: flex;
+justify-content: center;
+color: white;
+}
+
+.time-bar{
+    height: 8px;
+    width: 500px;
+    border-radius: 20px;
+    background-color: rgb(65, 65, 65);
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 6px;
 }
 
 .option{
@@ -214,7 +248,7 @@ main{
 
 .white-zone{
     height: 8px;
-    width: 20%;
+    width: 30%;
     background-color: grey;
     border-radius:20px 0 0 20px ;
 }
