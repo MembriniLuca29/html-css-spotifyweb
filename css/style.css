@@ -87,7 +87,7 @@ main{
 
 .recently{
     height: 60px;
-    padding: 10px 0 10px 0;
+    padding: 10px 0px 10px 20px;
 }
 
 .recently>h2{
@@ -106,9 +106,11 @@ main{
     color: white;
     margin:10px 20px 0 ;
     min-width: 200px;
+    margin-bottom: 80px;
+
 }
 
-.song>h5{
+.song>h5, .recently>h5{
     color: grey;
     font-size: smaller;
     padding-top: 10px;
@@ -121,6 +123,16 @@ main{
 .song>img{
     max-height:220px;
     min-height: 150px;
+    padding-bottom: 20px;
+}
+
+.more-space{
+    margin-bottom: 30px;
+}
+
+.radius>img{
+    border-radius: 50%;
+
 }
 /* barra inferiore */
 
