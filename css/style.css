@@ -77,6 +77,13 @@ a{
     justify-content: center;
     align-items: center;
 }
+
+.logo2{
+    height: 80px;
+    
+    display: none;
+}
+
 .logo>img{
     height: 50px;
 }
@@ -234,18 +241,23 @@ a:hover{
 
 .songs-container{
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap:wrap;
+   
 }
 
 .song{
     width: calc((100% / 6) - 240px);
-    height: 250px;
+    max-height: 250px;
     text-align: center;
     color: white;
-    margin:10px 20px 0 ;
-    min-width: 200px;
-    margin-bottom: 80px;
+    margin:10px  20px;
+    min-width: 120px;
+    margin-bottom: 4em;
     position: relative;
+}
+
+.song>img{
+    width: 150px;
 }
 
 
@@ -290,11 +302,7 @@ a:hover{
     padding-top: 10px;
 }
 
-.song>img{
-    max-height:200px;
-    min-height: 150px;
-    
-}
+
 
 .more-space{
     margin-bottom: 30px;
@@ -363,7 +371,6 @@ a:hover{
 
 .now-play>img{
     width: 50px;
-    height: 50;
 }
 
 .interactive-bar{
@@ -466,5 +473,70 @@ color: white;
 .audio-bar:hover .ball{
     display: block;
 }
+.mobile{
+    display: none;
+}
 
+
+@media screen and (max-width:1100px) {
+    .song{
+        width: calc((100% / 4) - 80px);
+    }
+}
+
+@media screen and (max-width:700px) {
+    .song{
+        width: calc((100% / 2) - 60px);
+    }
+}
+
+@media screen and (max-width:600px) {
+
+    main{
+        padding-left: 70px;
+    }
+    .song{
+        justify-content: flex-start;
+        width: calc((100% / 3) - 25px);
+        margin: 0 5px;
+      
+    }
+    
+    .left-bar{
+        width: 60px;
+        height: 100vh;
+    }
+    .logo{
+        display: none;
+    }
+    .logo2{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        width: 40px;
+        position: relative;
+        left: 10px;
+    }
+
+    .menu-icon>h6{
+        display: none;
+    }
+
+    .playlist{
+        display: none;
+    }
+
+    .left-bar-footer>h5{
+        display: none
+    }
+    .mobile{
+        display: block;
+    }
+    .left-bar-footer>.fake-br{
+        display: none;
+    }
+    .user>h3{
+        display: none;
+    }
+}
 
